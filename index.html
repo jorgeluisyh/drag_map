@@ -47,6 +47,8 @@ function getcentroid(param){
   return meanxy
 
 }
+
+// //peru_inicio
 // var url= "/data/dep_peru1.json"
 // d3.json(url, function(error,per){
 //   if(error) throw error;
@@ -107,8 +109,10 @@ function getcentroid(param){
 //     });
 //   });
 // });
+// //fin peru
 
 
+//usa inicio
 d3.json("/data/us.json", function(error, us) {
   if (error) throw error;
   var states = topojson.feature(us, us.objects.states),
@@ -163,6 +167,7 @@ d3.json("/data/us.json", function(error, us) {
     });
   });
 });
+//usa fin
 </script>
 </body>
 </html>
